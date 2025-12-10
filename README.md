@@ -1,1 +1,1 @@
-# FCNN---Fully-Conn.-Neural-Network---Tf
+Fully Connected Neural Network
