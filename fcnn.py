@@ -14,8 +14,8 @@ model = keras.Sequential([
 # Input Layer :  Flatten Layer
 #
 keras.layers.Flatten(input_shape = info.features['image'].shape)
-''' where first layer is input layer which is known as flatten layer because we images ds which are 3d 
-but our connected layed known as Dense in neural network only works with 1d ds
+''' where first layer is input layer which is known as flatten layer because our images ds is 3d 
+but our connected layer known as Dense in neural network only works with 1d ds
 so flatten layer is just unrolling the 3d images and converting all the images into 1d vector so that we can pass our
 input features to the dense layer'''
 
@@ -25,12 +25,11 @@ input features to the dense layer'''
 keras.layers.Dense(512, activation = 'relu' )
 
 ''' 512 = numbers of neurons in a particular layer, we can choose no of neurons randomly but it should be in the power of 2^n 
-because it is easy for gpu calculations
 
 activation fn. = relu 
 
 #Function of Dense Layer 
-whenever there is any input feature pass through dense layer along with its weight we calculate its pre-activation or logit
+whenever any input feature passes through dense layer along with its weight we calculate its pre-activation or logit
 then we pass the pre-activation to relu
 fn of relu.: f(x) = max(0,x)
     if pre-activation = -ve:
