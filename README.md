@@ -1,1 +1,1 @@
-Fully Connected Neural Network
+Fully Connected Neural Network Arch
